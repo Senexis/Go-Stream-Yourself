@@ -1,0 +1,13 @@
+.handle {
+    z-index: 10;
+    cursor: pointer;
+    font-weight: bolder;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.page-footer {
+    margin-top:20em;
+    padding: 10px 0;
+}

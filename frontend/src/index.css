@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+@media only screen and (min-width: 992px) {
+  .vertical-align-center {
+    top: 50%;
+  }
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+.vertical-align-center {
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.gsy-logo {
+  margin-right: 12px;
+}
+
+.text-muted {
+  color: #CCC
+}

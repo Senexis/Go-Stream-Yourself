@@ -1,0 +1,10 @@
+// signing data with private key.
+var crypto = require('crypto');
+var fs = require('fs');
+
+var pem = fs.readFileSync('key.pem');
+var key = pem.toString('ascii');
+
+var sign = crypto.createSign('RSA-SHA256');
+sign.update('abcdef');  // data from your file would go here
+var sig = sign.sign(key, 'hex');

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gostreamyourself.android.LoginActivity">
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_above="@id/login_user"/>
+
+
+    <TextView
+        android:id="@+id/login_errorTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_loginButton"
+        android:text="Wrong username or key"
+        android:textColor="@color/red"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/login_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_above="@id/login_loginButton"
+        android:hint="Username"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/login_loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_centerInParent="true"/>
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+{
+  "name": "backendbois",
+  "version": "0.0.0",
+  "description": "BestBackend",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "start": "node .",
+    "test": "node node_modules/mocha/bin/_mocha ./test/*test.js --reporter spec --exit",
+    "startmon": "nodemon ."
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "missing": "0.0.1",
+    "moment": "^2.22.2",
+    "mongoose": "^5.1.4",
+    "morgan": "~1.9.0",
+    "node-schedule": "^1.3.0",
+    "socket.io": "^2.1.1",
+    "uuid": "^3.2.1",
+    "x509": "^0.3.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "mocha": "^4.1.0",
+    "nodemon": "^1.17.5"
+  },
+  "homepage": "https://github.com/BoisIO/Back-End#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoisIO/Back-End.git"
+  },
+  "author": "Wouter Jansen, Thijmen Boot, Rowin van Blokland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BoisIO/Back-End/issues"
+  },
+  "engines": {
+    "node": "8.9.4",
+    "npm": "5.6.0"
+  }
+}

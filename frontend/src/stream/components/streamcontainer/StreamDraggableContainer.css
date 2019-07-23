@@ -1,0 +1,44 @@
+.draggablecontainer {
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
+
+.streamcontainercontrols {
+    color: white;
+    position: relative;
+}
+
+.streamcontainercontrols > span {
+    position: absolute;
+    padding: 4px;
+    font-weight: bolder;
+}
+
+.streamcontainercontrolsclose {
+    line-height: 24px;
+    right: 0;
+    z-index: 3;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+
+.streamcontainercontrolsclose:hover {
+    color: #ff5252;
+    font-weight: 900;
+}
+
+.streamcontainercontrolsdrag {
+    left: 0; 
+    right: 0; 
+    z-index: 2;
+}
+
+.streamcontainercontrolstitle {
+    line-height: 24px;
+    left: 5px;
+    z-index: 1;
+    font-size: 0.75em;
+}
+
